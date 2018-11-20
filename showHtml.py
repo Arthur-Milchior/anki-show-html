@@ -21,7 +21,6 @@ def HTML(nids):
         for (name,value) in note.items():
             text = text+ "\n"+ name + u":\n« "+ cgi.escape(value)+u"\n<br/>--------------<br/>\n"
         text = text+ "\nnid: "+ str(note.id)
-        print(text)
         if not askUser(text):
             return
 
