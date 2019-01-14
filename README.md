@@ -1,4 +1,3 @@
-
 # Description
 Allows to view HTML of each field of the selected card. Go to the
 browser, select some notes, go to edit->"Note's HTML". For each
@@ -10,6 +9,14 @@ This allows you to understand why a field which appear to be empty is
 not, to view the name of an image, to view that some tags are opened
 and not closed (or reciprocally)... i.e. I use it to debug my cards
 when I've strange problem
+
+## Warning:
+
+Do not use this add-on on cards which are in Filtered decks. You'll
+have a warning message and I don't know what the result will be. I'm
+however sure that, in the best case, it won't do anything, in the
+worst, it will mess with your collection. And honestly, I don't care
+enough about this bug to correct it.
 
 ## Links, licence and credits
 
