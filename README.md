@@ -1,24 +1,28 @@
-# Description
-Allows to view HTML of each field of the selected card. Go to the
-browser, select some notes, go to edit->"Note's HTML". For each
-selected note, you'll have a text showing the fields and their
-html. This text is also printed of the standard output (assuming you
-launched anki from a terminal).
-# Rational
-This allows you to understand why a field which appear to be empty is
-not, to view the name of an image, to view that some tags are opened
-and not closed (or reciprocally)... i.e. I use it to debug my cards
-when I've strange problem
+# Select any number of cards in the card browser and add/remove a prefix to their deck name.
 
-## Warning:
+## Usage:
 
-Do not use this add-on on cards which are in Filtered decks. You'll
-have a warning message and I don't know what the result will be. I'm
-however sure that, in the best case, it won't do anything, in the
-worst, it will mess with your collection. And honestly, I don't care
-enough about this bug to correct it.
+1. Open the card browser
+2. Select the desired cards
+3. Go to "Edit > Add prefix"(Ctrl+Alt+P)/"Remove prefix"(Ctrl+Alt+Shift+P)
 
-## Links, licence and credits
+
+## Rationales
+
+My main goal was: exporting some cards selected in the browser. (This
+can now be done using add-on [1983204951:Export cards selected in the
+Browser](https://ankiweb.net/shared/info/1983204951).)
+
+In order to do this, I add a common prefix to all of cards I want to
+export. In the main window, I export this deck. Once I import the deck
+again, I just delete this prefix, and everything go back in the
+initial deck.
+
+It leaves an empty deck "prefix" which can quickly and easily be
+removed.
+
+## TODO
+Allow to directly export notes by selecting them in the browser
 
 Key         |Value
 ------------|-------------------------------------------------------------------
@@ -26,4 +30,5 @@ Copyright   |Arthur Milchior <arthur@milchior.fr>
 Based on    |Anki code by Damien Elmes <anki@ichi2.net>
 License     |GNU AGPL, version 3 or later; http|//www.gnu.org/licenses/agpl.html
 Source in   | https://github.com/Arthur-Milchior/anki-show-html
-Addon number| [1778098423](https://ankiweb.net/shared/info/1778098423)
+Addon number| [1262882843](https://ankiweb.net/shared/info/1262882843)
+Support me on| [![Ko-fi](https://ko-fi.com/img/Kofi_Logo_Blue.svg)](https://Ko-fi.com/arthurmilchior) or [![Patreon](http://www.milchior.fr/patreon.png)](https://www.patreon.com/bePatron?u=146206)
