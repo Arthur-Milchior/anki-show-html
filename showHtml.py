@@ -13,6 +13,13 @@ import cgi
 import anki.notes
 
 
+def gc(arg, fail=False):
+    conf = mw.addonManager.getConfig(__name__)
+    if conf:
+        return conf.get(arg, fail)
+    else:
+        return fail
+
 def HTML(nids):
     """Show each field's content, and the note id. Click on cancel to stop seeing ids"""
     for nid in nids:
@@ -26,7 +33,7 @@ def HTML(nids):
 
 def setupMenu(browser):
     a = QAction("Note's HTML", browser)
-    a.setShortcut(QKeySequence("Ctrl+H")) # Shortcut for convenience. Added by Didi
+    a.setShortcut(QKeySequence(gc("shortcut", "Ctrl+H")))
     a.triggered.connect(lambda e: onHTML(browser))
     browser.form.menuEdit.addSeparator()
     browser.form.menuEdit.addAction(a)
