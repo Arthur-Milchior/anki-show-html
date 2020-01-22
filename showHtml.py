@@ -3,14 +3,16 @@
 
 """
 
-from aqt.utils import tooltip, showWarning, askUser
-from PyQt5.QtWidgets import *
-from anki.hooks import addHook
+import cgi
+
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
-from aqt import mw
-import cgi
+from PyQt5.QtWidgets import *
+
 import anki.notes
+from anki.hooks import addHook
+from aqt import mw
+from aqt.utils import askUser, showWarning, tooltip
 
 
 def HTML(nids):
