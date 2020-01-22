@@ -20,8 +20,8 @@ def HTML(nids):
     for nid in nids:
         note = mw.col.getNote(nid)
         text= "\n"
-        for (name,value) in note.items():
-            text = text+ "\n"+ name + u":\n« "+ cgi.escape(value)+u"\n<br/>--------------<br/>\n"
+        for (name,value) in list(note.items()):
+            text = text+ "\n"+ name + ":\n« "+ cgi.escape(value)+"\n<br/>--------------<br/>\n"
         text = text+ "\nnid: "+ str(note.id)
         if not askUser(text):
             return
