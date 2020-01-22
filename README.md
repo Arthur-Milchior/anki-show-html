@@ -18,6 +18,15 @@ however sure that, in the best case, it won't do anything, in the
 worst, it will mess with your collection. And honestly, I don't care
 enough about this bug to correct it.
 
+## Anki > 2.1.20
+Anki changed a lot in version 2.1.20. I am currently unable to
+understand those change, as they are in rust, and I don't know
+it. Furthermore, rules for card generation change, so it's possible
+that this add-on becomes useless. Anyway, until I know more about
+2.1.20, this add-on won't be available with latest anki. As this
+add-on as only peen downloaded 63 times, I believe that's not a real trouble.
+
+Note that you can use "ctrl+shift+x" to access the html content of a field.
 ## Links, licence and credits
 
 Key         |Value
